@@ -28,14 +28,4 @@ struct Counter {
         
         return result
     }
-    
-    private func formatResult(all: Int, coins:[Int: Int]) -> [Int] {
-        var result: [Int] = [all]
-        
-        currency.forEach { actual in
-            result.append(coins[actual] ?? 0)
-        }
-        
-        return result
-    }
 }
